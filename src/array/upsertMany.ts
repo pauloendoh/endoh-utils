@@ -3,7 +3,7 @@ const upsertMany = <T>(
   items: T[],
   equalityFn: (newItem: T, oldArrayItem: T) => boolean
 ) => {
-  if (array === undefined || array === null) return [items];
+  if (array === undefined || array === null) return items;
 
   let newArray = [...array];
 
