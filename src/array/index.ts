@@ -3,3 +3,4 @@ export * from "./pushOrRemove";
 export { default as pushOrReplace } from "./pushOrReplace";
 export { default as upsert } from "./upsert";
 export { default as upsertMany } from "./upsertMany";
+export * from "./pushOrRemoveV2/pushOrRemoveV2";
