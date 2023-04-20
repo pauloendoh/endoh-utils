@@ -1,3 +1,6 @@
+/**
+ * @deprecated use pushOrRemoveV2
+ */
 export const pushOrRemove = <T>(array: T[], item: T, idKey?: keyof T) => {
   if (array === undefined || array === null) return [item];
 

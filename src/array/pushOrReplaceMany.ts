@@ -1,7 +1,4 @@
-/**
- * @deprecated name deprecated. Use pushOrReplaceMany instead
- */
-const upsertMany = <T>(
+const pushOrReplaceMany = <T>(
   array: T[] | undefined,
   items: T[],
   equalityFn: (newItem: T, oldArrayItem: T) => boolean
@@ -27,4 +24,4 @@ const upsertMany = <T>(
   return newArray;
 };
 
-export default upsertMany;
+export default pushOrReplaceMany;
