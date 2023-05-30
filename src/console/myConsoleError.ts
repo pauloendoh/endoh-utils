@@ -1,11 +1,7 @@
-import { Chalk } from "chalk";
+// wrapper for console.error
 
-export function myConsoleError(text: any) {
-  const chalk = new Chalk();
-  if (typeof text === "string") {
-    console.log("❌", chalk.redBright(text));
-  } else {
-    console.log("❌", chalk.redBright(JSON.stringify(text)));
-  }
-  return;
+type Params = Parameters<Console["error"]>;
+
+export function myConsoleError(...args: Params) {
+  console.error("❌", ...args);
 }

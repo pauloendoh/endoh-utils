@@ -18,5 +18,6 @@ exports.sum = void 0;
 const sum = (a, b) => a + b;
 exports.sum = sum;
 __exportStar(require("./array"), exports);
+__exportStar(require("./console"), exports);
 __exportStar(require("./number"), exports);
 __exportStar(require("./text"), exports);
