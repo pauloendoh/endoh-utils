@@ -1,3 +1,6 @@
+/**
+ * @deprecated use upsert instead
+ */
 const pushOrReplace = <T>(array: T[] | undefined, item: T, idKey: keyof T) => {
   if (array === undefined || array === null) return [item];
 
