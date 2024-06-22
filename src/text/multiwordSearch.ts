@@ -1,8 +1,19 @@
-import textContainsWords from "./textContainsWords";
-
 /**
  * @deprecated Use textContainsWords instead
  */
 export default function multiwordSearch(_text: string, _words: string) {
-  return textContainsWords(_text, _words);
+  const text = _text
+    .trim()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+  const words = _words
+    .trim()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+
+  const wordArray = words.split(" ");
+
+  return wordArray.every((w) => text.includes(w));
 }
