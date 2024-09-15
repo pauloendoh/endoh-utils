@@ -6,3 +6,4 @@ export { default as pushOrReplace } from "./pushOrReplace";
 export { default as pushOrReplaceMany } from "./pushOrReplaceMany";
 export { default as upsert } from "./upsert";
 export { default as upsertMany } from "./upsertMany";
+export { default as valueIsOneOf } from "./valueIsOneOf";
